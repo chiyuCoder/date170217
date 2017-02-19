@@ -1,0 +1,37 @@
+
+.mainContent {
+	width:80%;
+    min-width:800px;
+    margin:0 auto;
+}
+.mainContent:after,.mytr:after {
+	clear:both;display: block;height:0;visibility: hidden;content: "";
+}
+.leftPart {
+	width:150px;
+    float:left;
+}
+.mainContent .leftPart ul{padding:30px 0 0 0px;}
+.mainContent .leftPart ul li{
+	 padding: 10px 5px;background: darkorange;text-indent: 20px;margin:2px 0;color:darkslategrey;font-weight: bold;cursor: pointer;
+}
+.rightPart {
+	min-width:600px;float: left;
+}
+.rightPart table{
+	width:90%;margin:0 auto;border-collapse: collapse;
+}
+.rightPart table tr{height: 30px;}
+.rightPart table td{
+    border:1px solid darkcyan;text-align: center;
+}
+.rightPart table thead tr{
+	height:40px;background: lightblue;font-weight: bold;
+}
+.rightPart table thead tr td {
+    cursor: pointer;
+}
+.rightPart table tbody .classsum td{
+	 font-size: 12px;font-weight: bold;
+}
+.rightPart table tbody tr td a:hover{color:darkred;background: lightblue;transition: 1s all;display: block;height:100%;width:100%;line-height:30px;}

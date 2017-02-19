@@ -1,0 +1,4 @@
+*{padding: 0;margin: 0;}
+header{color:red;font-size: 50px;text-align: center;line-height: 100px;}
+ul{list-style: none;}
+a{text-decoration: none;color:inherit;}

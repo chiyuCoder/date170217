@@ -1,0 +1,58 @@
+<div class="mainContent">
+    <div class="leftPart">
+        <h2>书籍类型</h2>
+        <ul>
+            <li ng-click = "$ctrl.classname = ''">
+                <a href >全部</a>
+            </li>
+            <li ng-repeat="bookclass in $ctrl.bookclasses | orderBy:'classname'" ><!--ng-click = "$ctrl.classname = bookclass.classname"-->
+                <a href="#!/class/{{bookclass.classname}}" >
+                    {{bookclass.classname}}
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="rightPart">
+        <table>
+            <thead>
+                <tr>
+                    <td class="col col-1">序号</td>
+                    <td ng-click = "$ctrl.bookorder = 'bookname'" class="col col-2">书名</td>
+                    <td class="col col-3" ng-click = "$ctrl.bookorder = 'bookwrite'">作者</td>
+                    <td class="col col-4" ng-click = "$ctrl.bookorder = 'bookprice'">定价</td>
+                    <td class="col col-5" ng-click = "$ctrl.bookorder = 'bookdate'">出版日期</td>
+                </tr>
+            </thead>
+            <tbody ng-repeat="bookclass in $ctrl.bookclasses | filter : $ctrl.classname" ng-init = "booksx = $index">
+                <tr ng-repeat = "book in bookclass.books | orderBy:$ctrl.bookorder" ng-init = "booksy = $index;$ctrl.bookorder = 'bookname'">               
+                    <td class="col col-1">
+                        {{booksx.toString()+booksy.toString()}}
+                    </td>
+                    <td class="col col-2">
+                        <a href="#!/{{book.bookurl}}" title="{{book.bookname}}">{{book.bookname}}</a>
+                    </td>
+                    <td class="col col-3">
+                        {{book.bookwrite}}
+                    </td>
+                    <td class="col col-4">
+                        {{book.bookprice}}
+                    </td>
+                    <td class="col col-5">
+                        {{book.bookdate}}
+                    </td>                    
+                </tr> 
+                <tr class="classsum">
+                    <td class="col col-1">书籍类型:</td>
+                    <td class="col col-2">{{bookclass.classname}}</td>
+                    <td class="col col-3"></td>
+                    <td class="col col-4">
+                        
+                    </td>
+                    <td class="col col-5">
+                        计{{bookclass.books.length}}本
+                    </td>
+                </tr>               
+            </tbody>
+        </table>        
+    </div>
+</div>

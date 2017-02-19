@@ -1,0 +1,9 @@
+form{padding: 120px 0px;}
+fieldset{text-align: center;width:640px;margin:0 auto;padding: 50px 0px;}
+legend{font-size: 30px;font-weight: bold;}
+.myrow{margin:20px auto;}
+form .myrow{font-size: 25px;}
+form .myrow label{display: inline-block;width:120px;text-align: left;}
+form .myrow input{line-height: 30px;width:300px;}
+form .myrow a{display: inline-block;padding: 5px 15px;font-size: 20px;color:black;text-decoration: none;border:1px solid lightblue;border-radius: 20px;}
+form .myrow a:hover{background: lightblue;color:darkred;}
