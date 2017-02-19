@@ -9,9 +9,6 @@ angular
                 })
             .when("/index",{
                 template:'<index></index>'
-            }) 
-            .when("/class/:bookclass.classname",{
-                template:'<webheader></webheader>'
             })
             .otherwise("/login");
     }]);

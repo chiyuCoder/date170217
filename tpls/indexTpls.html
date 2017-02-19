@@ -5,8 +5,8 @@
             <li ng-click = "$ctrl.classname = ''">
                 <a href >全部</a>
             </li>
-            <li ng-repeat="bookclass in $ctrl.bookclasses | orderBy:'classname'" ><!--ng-click = "$ctrl.classname = bookclass.classname"-->
-                <a href="#!/class/{{bookclass.classname}}" >
+            <li ng-repeat="bookclass in $ctrl.bookclasses | orderBy:'classname'" ng-click = "$ctrl.classname = bookclass.classname"><!---->
+                <a href="" >
                     {{bookclass.classname}}
                 </a>
             </li>
