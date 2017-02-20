@@ -1,0 +1,29 @@
+<div class="mainContent">
+    <div class="bkheader">
+        <h2 class="bktitle">
+         {{$ctrl.book.bookname}}
+        </h2>
+        <h4>
+            <spn>作者:</spn><span>{{$ctrl.book.bookwrite}}</span>
+        </h4>
+    </div>
+    <div class="bkbody">
+        <table>
+            <tr>
+                <td>
+                    <h6>出版日期：</h6>
+                </td>
+                <td>{{$ctrl.book.bookdate}}
+                </td>
+                <td>
+                    <h6>定价：</h6>
+                </td>
+                <td>{{$ctrl.book.bookprice}}
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="bkfooter">
+        <a href="#!/index">返回首页</a>
+    </div>
+</div>

@@ -10,5 +10,8 @@ angular
             .when("/index",{
                 template:'<index></index>'
             })
+            .when("/book/:bookurl",{
+                template:'<book></book>'
+            })
             .otherwise("/login");
     }]);

@@ -5,8 +5,8 @@
             <li ng-click = "$ctrl.classname = ''">
                 <a href >全部</a>
             </li>
-            <li ng-repeat="bookclass in $ctrl.bookclasses | orderBy:'classname'" ng-click = "$ctrl.classname = bookclass.classname"><!---->
-                <a href="" >
+            <li ng-repeat="bookclass in $ctrl.bookclasses | orderBy:'classname'" ng-click = "$ctrl.classname = bookclass.classname"><!-- -->
+                <a href="">
                     {{bookclass.classname}}
                 </a>
             </li>
@@ -29,7 +29,7 @@
                         {{booksx.toString()+booksy.toString()}}
                     </td>
                     <td class="col col-2">
-                        <a href="#!/{{book.bookurl}}" title="{{book.bookname}}">{{book.bookname}}</a>
+                        <a href="#!/book/{{book.bookurl}}" title="{{book.bookname}}">{{book.bookname}}</a>
                     </td>
                     <td class="col col-3">
                         {{book.bookwrite}}
