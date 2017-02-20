@@ -1,1 +1,0 @@
-angular.module('proInd',['ngRoute','login','index']);
